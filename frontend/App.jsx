@@ -27,7 +27,7 @@ export default function App() {
 
   const [editingId, setEditingId] = useState(null);
 
-  const API = process.env.REACT_APP_API;
+const API = import.meta.env.VITE_API;
 
   const fetchContacts = async () => {
     const res = await fetch(API);
